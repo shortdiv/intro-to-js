@@ -1,0 +1,116 @@
+body {
+  background-color: #3BB881;
+}
+
+form {
+  padding-left: 30px;
+}
+
+.wrapper {
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.wrapper > * {
+  flex: 1 100%;
+}
+.wrapper h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+p,
+label {
+  color: #64b587;
+  font-weight: bold;
+}
+
+.tea-label {
+  display: block;
+  position: relative;
+  color: rgba(14, 30, 37, 0.54);
+  font-weight: 300;
+  font-size: 1em;
+  padding: 10px 5px 5px 0px;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+.tea-label.disabled {
+  opacity: 0.5;
+}
+.tea-label span {
+  position: absolute;
+  top: 15px;
+  margin-left: 15px;
+}
+
+.tea, .milk {
+  margin-top: 1em;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 5px solid #282c34;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 30px;
+  left: 20px;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+input[type="radio"]:checked:after {
+  content: "";
+  display: block;
+  background: #282c34;
+  border-radius: 100%;
+  height: 11px;
+  width: 11px;
+  top: 20px;
+  left: 10px;
+  z-index: 5;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+  position: absolute;
+}
+
+.milk {
+  align-self: flex-start;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 20px 60px;
+  outline: none;
+  background-color: #282c34;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #95a5a6;
+  font-size: 1.2em;
+  color: white;
+}
+
+.submit-button:hover{
+  cursor: pointer;
+}
